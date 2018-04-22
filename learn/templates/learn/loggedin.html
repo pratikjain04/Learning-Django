@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+<html lang="en">
+<head>
+    {% block title %}
+    <title>Home</title>
+    {% endblock %}
+
+</head>
+{% block body %}
+     <h1>Welcome, {{ user.first_name }}</h1>
+    This will be the future homepage.
+<p> Website Under Construction.</p>
+
+{% endblock %}
+
+    {% block list %}
+        <li><a href="{% url 'login' %}" style="font-size: 18px">Login</a></li>
+        <li><a href="{% url 'signup' %}" style="font-size: 18px">Sign Up</a></li>
+         <li><a href="{% url 'logout' %}" style="font-size: 18px">Logout</a></li>
+     {% endblock %}
+
+</html>
